@@ -30,6 +30,7 @@ const handleChangeEvent = () => {
         if (radio[i].checked) {
             console.log(price[i].childNodes[0])
             product_option[i].classList.add("product-selected");
+            
             product_details[i].innerHTML = addProductDetails();
             total.innerHTML = price[i].childNodes[0].nodeValue;
             let disc = i == 1 ? discount[i].children[1].textContent : discount[i].innerHTML;
@@ -47,47 +48,37 @@ radio.forEach(input => {
 const addProductDetails = () => {
     let str = "";
     str += `
-        <table>
-            <tr>
-                <td class="heading"></td>
-                <td>Size</td>
-                <td>Color</td>
-            </tr>
-            <tr>
-                <td class="heading">#1</td>
-                <td>
-                    <select>
-                        <option value="s">S</option>
-                        <option value="m">M</option>
-                        <option value="l">L</option>
-                    </select>
-                </td>
-                <td>
-                    <select>
-                        <option value="red">Red</option>
-                        <option value="blue">Blue</option>
-                        <option value="Green">Green</option>
-                    </select>
-                </td>
-            </tr>
-            <tr>
-                <td class="heading">#2</td>
-                <td>
-                    <select id="size2">
-                        <option value="s">S</option>
-                        <option value="m">M</option>
-                        <option value="l">L</option>
-                    </select>
-                </td>
-                <td>
-                    <select id="color2">
-                        <option value="red">Red</option>
-                        <option value="blue">Blue</option>
-                        <option value="Green">Green</option>
-                    </select>
-                </td>
-            </tr>
-        </table>
+        <div class="row1">
+            <p class="index"></p>
+            <p class="size">size</p>
+            <p class="color">color</p>
+        </div>
+        <div class="row2">
+            <p class="index">#1</p>
+            <select class="size-input">
+                <option value="s">S</option>
+                <option value="m">M</option>
+                <option value="l">L</option>
+            </select>
+            <select class="clr-input">
+                <option value="red">Red</option>
+                <option value="blue">Blue</option>
+                <option value="Green">Green</option>
+            </select>
+        </div>
+        <div class="row3">
+            <p class="index">#2</p>
+            <select class="size-input">
+                <option value="s">S</option>
+                <option value="m">M</option>
+                <option value="l">L</option>
+            </select>
+            <select class="clr-input">
+                <option value="red">Red</option>
+                <option value="blue">Blue</option>
+                <option value="Green">Green</option>
+            </select>
+        </div>
     `
     return str;
 }
