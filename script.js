@@ -32,7 +32,8 @@ const handleChangeEvent = () => {
             product_option[i].classList.add("product-selected");
             product_details[i].innerHTML = addProductDetails();
             total.innerHTML = price[i].childNodes[0].nodeValue;
-            data = { pair: pairs_count[i].innerHTML, price: price[i].childNodes[0].nodeValue, discount: discount[i].innerHTML};
+            let disc = i == 1 ? discount[i].children[1].textContent : discount[i].innerHTML;
+            data = { pair: pairs_count[i].innerHTML, price: price[i].childNodes[0].nodeValue, discount: disc};
         }
     }
 }
@@ -101,7 +102,7 @@ cart_btn.addEventListener('click', () => {
         str += `<p>Product added to cart</p>
                 <p>Details:</p>
                 <hr/>
-                <p>${data.pair} Pair </p>
+                <p>${data.pair} </p>
                 <p>Price : ${data.price} with <b>${data.discount}</b></p>`
         success_msg.innerHTML = str;
 
