@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Product</title>
+        <link rel="stylesheet" href="./styles.css">
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <p class="line-through"><span>Bundle & Save</span></p>
+            </header>
+            <main>
+                <section id="product-selection">
+                    <!-- option 1 -->
+                    <div class="product-options">
+                        <div class="radio-btn">
+                            <input type="radio" name="radio"  />
+                        </div>
+
+                        <div class="product-qty-price">
+                            <p class="pairs-count">1 pair</p>
+                            <p class="price">DKK 195.00</p>
+                        </div>
+                        <div class="discount">
+                            50% OFF
+                        </div>
+                        <div class="product-details">
+                            <!-- added via js -->
+                        </div>
+                    </div>
+
+                    <!-- option 2 -->
+                    <div class="product-options">
+                        <div class="radio-btn">
+                            <input type="radio" name="radio" />
+                        </div>
+
+                        <div class="product-qty-price">
+                            <p class="pairs-count">2 pair</p>
+                            <p class="price">DKK 345.00<span class="old-price">DKK 195.00</span></p>
+                        </div>
+
+                        <div class="discount">
+                            <p>Most Popular</p>
+                            <p>40% OFF</p>
+                        </div>
+                        <div class="product-details">
+                            <!-- add via js -->
+                        </div>
+                    </div>
+
+                    <!-- option 3 -->
+                    <div class="product-options">
+                        <div class="radio-btn">
+                            <input type="radio" name="radio" />
+                        </div>
+
+                        <div class="product-qty-price">
+                            <p class="pairs-count">3 pair</p>
+                            <p class="price">DKK 528.00</p>
+                        </div>
+                        <div class="discount">
+                            60% OFF
+                        </div>
+                        <div class="product-details">
+                            <!-- added via js -->
+                        </div>
+                    </div>
+                </section>
+
+                <!-- shipping & price details -->
+                <section id="cart-details">
+                    <div class="shipping-info">
+                        <p>Free 2 Day Shipping</p>
+                        <p>Total: <b id="total">DKK 360.00</b></p>
+                    </div>
+                    <button class="addToCart" id="cart-btn">
+                        + Add to Cart
+                    </button>
+                </section>
+
+            </main>
+            <footer>
+                <small>
+                    &copy;
+                </small>
+                Powered by Pumper
+            </footer>
+
+            <!-- pop up message on adding a product to cart -->
+            <div id="success-msg"></div>
+        </div>
+
+        <!-- js file -->
+        <script src="./script.js"></script>
+    </body>
+</html>
