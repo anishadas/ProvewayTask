@@ -96,6 +96,7 @@ input[type=radio] {
 
 .product-options .product-qty-price p:last-child {
     font-weight: 600;
+
 }
 
 .product-options .product-qty-price .old-price {
@@ -103,7 +104,6 @@ input[type=radio] {
     color: rgb(184, 178, 178);
     white-space: nowrap;
     text-decoration: line-through;
-    padding-left: 5px;
 }
 
 .product-options .discount {
@@ -344,7 +344,7 @@ footer {
     }
 
     .product-options .product-qty-price {
-        width: 42%;
+        width: 45%;
         font-size: 1rem;
 
     }
@@ -379,7 +379,8 @@ footer {
 
     .product-options .product-qty-price {
         font-size: 0.8rem;
-        width: 38%;
+        width: 40%;
+        border: 2px solid red;
     }
 
     .product-options .product-qty-price .old-price {
@@ -398,7 +399,9 @@ footer {
     #success-msg {
         width: 80%;
     }
-    #success-msg p,#success-msg p:first-child{
+
+    #success-msg p,
+    #success-msg p:first-child {
         font-size: 0.8rem;
     }
 
