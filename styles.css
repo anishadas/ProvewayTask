@@ -216,6 +216,85 @@ footer {
     font-size: 1rem;
 }
 
+/* success message with animations */
+#success-msg {
+    background-color: #3C7E60;
+    border-radius: 10px;
+    padding: 10px 20px;
+    width: 50%;
+    color: white;
+    font-weight: 600;
+    text-align: left;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    visibility: hidden;
+    z-index: 1;
+}
+
+#success-msg p {
+    font-size: 1.2rem;
+}
+
+#success-msg p:first-child {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+#success-msg.show {
+    visibility: visible;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+    from {
+        top: 0;
+        opacity: 0;
+    }
+
+    to {
+        top: 50%;
+        opacity: 1;
+    }
+}
+
+@keyframes fadein {
+    from {
+        top: 0;
+        opacity: 0;
+    }
+
+    to {
+        top: 50%;
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeout {
+    from {
+        top: 50%;
+        opacity: 1;
+    }
+
+    to {
+        top: 0;
+        opacity: 0;
+    }
+}
+
+@keyframes fadeout {
+    from {
+        top: 50%;
+        opacity: 1;
+    }
+
+    to {
+        top: 0;
+        opacity: 0;
+    }
+}
+
 /***************  responsive css  ******************/
 
 @media screen and (max-width:1024px) {
@@ -316,83 +395,11 @@ footer {
         font-size: 0.7rem;
     }
 
-}
-
-/* success message with animations */
-#success-msg {
-    background-color: #3C7E60;
-    border-radius: 10px;
-    padding: 10px 20px;
-    width: 50%;
-    color: white;
-    font-weight: 600;
-    text-align: left;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    visibility: hidden;
-    z-index: 1;
-}
-
-#success-msg p {
-    font-size: 1.2rem;
-}
-
-#success-msg p:first-child {
-    text-align: center;
-    font-size: 1.5rem;
-}
-
-#success-msg.show {
-    visibility: visible;
-    animation: fadein 0.5s, fadeout 0.5s 2.5s;
-}
-
-@-webkit-keyframes fadein {
-    from {
-        top: 0;
-        opacity: 0;
+    #success-msg {
+        width: 80%;
+    }
+    #success-msg p,#success-msg p:first-child{
+        font-size: 0.8rem;
     }
 
-    to {
-        top: 50%;
-        opacity: 1;
-    }
-}
-
-@keyframes fadein {
-    from {
-        top: 0;
-        opacity: 0;
-    }
-
-    to {
-        top: 50%;
-        opacity: 1;
-    }
-}
-
-@-webkit-keyframes fadeout {
-    from {
-        top: 50%;
-        opacity: 1;
-    }
-
-    to {
-        top: 0;
-        opacity: 0;
-    }
-}
-
-@keyframes fadeout {
-    from {
-        top: 50%;
-        opacity: 1;
-    }
-
-    to {
-        top: 0;
-        opacity: 0;
-    }
 }
