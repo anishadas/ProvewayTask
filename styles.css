@@ -380,7 +380,6 @@ footer {
     .product-options .product-qty-price {
         font-size: 0.8rem;
         width: 40%;
-        border: 2px solid red;
     }
 
     .product-options .product-qty-price .old-price {
