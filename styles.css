@@ -18,7 +18,6 @@ body {
 
 .container {
     width: 64.7rem;
-    /* height: 66rem; */
     background-color: white;
 }
 
@@ -63,22 +62,15 @@ section {
 
 
 /***************  main  ******************/
-main {
-    /* width: 100%; */
-    /* display: flex;
-    align-items: center;
-    flex-direction: column; */
-}
+
 
 /* section 1 - product selection */
 #product-selection .product-options {
     display: flex;
     align-items: center;
-    /* justify-content: space-between; */
     flex-wrap: wrap;
     width: 34.1rem;
     height: 7.4rem;
-    /* height: 16.2rem; */
     padding: 2rem 2.2rem;
     border-radius: 0.4rem;
     margin-bottom: 1.8rem;
@@ -89,9 +81,6 @@ main {
 .radio-btn {
     width: 1.4rem;
     height: 1.4rem;
-    /* display: flex; */
-    /* align-items: center; */
-    /* justify-content: center; */
 }
 
 input[type=radio] {
@@ -105,14 +94,11 @@ input[type=radio] {
     width: 17.1rem;
     margin-left: 1.8rem;
     margin-right: 1rem;
-    /* border: 2px solid red; */
-
 }
 
 .product-options .product-qty-price .pairs-count {
     text-transform: capitalize;
     width: 3.6rem;
-    /* margin-right: 3.4rem; */
     height: 1.8rem;
 }
 
@@ -130,7 +116,6 @@ input[type=radio] {
     text-decoration: line-through;
     width: 5.5rem;
     height: 1.2rem;
-    /* border: 2px solid red; */
     position: relative;
     left: 11.6rem;
     bottom: 1.8rem;
@@ -141,14 +126,11 @@ input[type=radio] {
     width: 6.5rem;
     height: 3.3rem;
     font-weight: 600;
-    /* text-align: center; */
     font-size: 1.4rem;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    /* margin: 1rem 0; */
-    /* border: 2px solid red; */
 }
 
 .product-options .discount p:first-child {
@@ -180,12 +162,14 @@ input[type=radio] {
     margin: 0.8rem 0 2rem 3.7rem;
 }
 
-.product-details .row1{
+.product-details .row1 {
     display: flex;
     height: 1.2rem;
     margin-bottom: 0.7rem;
 }
-.product-details .row2,.product-details .row3 {
+
+.product-details .row2,
+.product-details .row3 {
     display: flex;
     margin-bottom: 0.7rem;
     height: 2.5rem;
@@ -207,20 +191,21 @@ input[type=radio] {
     text-align: left;
 }
 
-.product-details .index{
+.product-details .index {
     width: 2.3rem;
     height: 1.1rem;
     margin-bottom: 2.2rem;
 }
 
-.product-details .size-input{
+.product-details .size-input {
     width: 6.6rem;
     height: 2.5rem;
     font-size: 1.1rem;
     outline: none;
     cursor: pointer;
 }
-.product-details .clr-input{
+
+.product-details .clr-input {
     width: 7.2rem;
     height: 2.5rem;
     margin-left: 0.7rem;
