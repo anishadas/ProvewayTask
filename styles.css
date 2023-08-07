@@ -71,7 +71,7 @@ section {
     flex-wrap: wrap;
     width: 34.1rem;
     height: 7.4rem;
-    padding: 2rem 2.2rem;
+    padding: 2rem 2.2rem 2rem 2.3rem;
     border-radius: 0.4rem;
     margin-bottom: 1.8rem;
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
@@ -92,6 +92,7 @@ input[type=radio] {
 .product-options .product-qty-price {
     font-size: 1.4rem;
     width: 17.1rem;
+    height: 3.8rem;
     margin-left: 1.8rem;
     margin-right: 1rem;
 }
@@ -128,9 +129,9 @@ input[type=radio] {
     font-weight: 600;
     font-size: 1.4rem;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items:flex-end;
     flex-direction: column;
+    margin-left: 0.9rem;
 }
 
 .product-options .discount p:first-child {
@@ -159,7 +160,7 @@ input[type=radio] {
     flex-direction: column;
     width: 17.7rem;
     height: 7.6rem;
-    margin: 0.8rem 0 2rem 3.7rem;
+    margin: 0.8rem 0 0 0.9rem;
 }
 
 .product-details .row1 {
