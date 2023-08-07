@@ -12,57 +12,50 @@
             <main>
                 <section id="product-selection">
                     <!-- option 1 -->
-                    <div class="product-options">
-                        <div class="radio-btn">
-                            <input type="radio" name="radio" />
-                        </div>
+                    <div class="product-options" id="product1">
 
-                        <div class="product-qty-price">
-                            <p class="pairs-count">1 pair</p>
-                            <p class="price">DKK 195.00</p>
-                        </div>
+                        <input type="radio" name="radio" class="radio-btn" />
+
+                        <p class="pairs-count">1 pair</p>
+                        <p class="price">DKK 195.00</p>
                         <div class="discount">
                             50% OFF
                         </div>
+
                         <div class="product-details">
                             <!-- added via js -->
                         </div>
                     </div>
 
                     <!-- option 2 -->
-                    <div class="product-options">
-                        <div class="radio-btn">
-                            <input type="radio" name="radio" />
-                        </div>
+                    <div class="product-options product-selected" id="product2">
+                     
+                        <input type="radio" name="radio" class="radio-btn" checked/>
 
-                        <div class="product-qty-price">
-                            <p class="pairs-count">2 pair</p>
-                            <p class="price">DKK 345.00</p>
-                            <p class="old-price">DKK 195.00</p>
-                        </div>
+                        <p class="pairs-count">2 pair</p>
+                        <p class="price">DKK 345.00</p>
+                        <p class="old-price">DKK 195.00</p>
 
-                        <div class="discount">
-                            <p>Most Popular</p>
-                            <p>40% OFF</p>
-                        </div>
+                        <p class="popular">Most Popular</p>
+                        <div class="discount2">40% OFF</div>
+
                         <div class="product-details">
                             <!-- added via js -->
                         </div>
                     </div>
 
                     <!-- option 3 -->
-                    <div class="product-options">
-                        <div class="radio-btn">
-                            <input type="radio" name="radio" />
-                        </div>
+                    <div class="product-options" id="product3">
 
-                        <div class="product-qty-price">
-                            <p class="pairs-count">3 pair</p>
-                            <p class="price">DKK 528.00</p>
-                        </div>
+                        <input type="radio" name="radio" class="radio-btn" />
+
+                        <p class="pairs-count">3 pair</p>
+                        <p class="price">DKK 528.00</p>
+
                         <div class="discount">
                             60% OFF
                         </div>
+                        
                         <div class="product-details">
                             <!-- added via js -->
                         </div>
@@ -70,21 +63,18 @@
                 </section>
 
                 <!-- shipping & price details -->
-                <section id="cart-details">
-                    <div class="shipping-info">
-                        <p>Free 2 Day Shipping</p>
-                        <p>Total: <b id="total">DKK 360.00</b></p>
-                    </div>
-                    <button class="addToCart" id="cart-btn">
-                        + Add to Cart
-                    </button>
-                </section>
+
+                <p class="shipping">Free 2 Day Shipping</p>
+                <p class="total">Total: <b id="total">DKK 360.00</b></p>
+
+                <!-- cart button -->
+                <button class="addToCart" id="cart-btn">
+                    + Add to Cart
+                </button>
 
             </main>
             <footer>
-                <small>
-                    &copy;
-                </small>
+                <small>&copy;</small>
                 Powered by Pumper
             </footer>
 

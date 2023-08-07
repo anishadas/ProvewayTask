@@ -17,16 +17,17 @@ body {
 }
 
 .container {
-    width: 64.7rem;
+    width: 64.6rem;
+    height: 74.8rem;
     background-color: white;
+    position: relative;
 }
 
-/************ common ***************/
-section {
-    margin-left: 15rem;
-    margin-right: 15.6rem;
-    width: 34.1rem;
+main {
+    position: relative;
 }
+
+
 
 
 /***************  header  ******************/
@@ -34,7 +35,9 @@ section {
 .line-through {
     display: table;
     white-space: nowrap;
-    margin: 15.6rem 15.6rem 1.8rem 15rem;
+    position: absolute;
+    top: 15.6rem;
+    left: 15rem;
     width: 34.1rem;
     height: 1.8rem;
 }
@@ -66,182 +69,218 @@ section {
 
 /* section 1 - product selection */
 #product-selection .product-options {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    width: 34.1rem;
-    height: 7.4rem;
-    padding: 2rem 2.2rem 2rem 2.3rem;
-    border-radius: 0.4rem;
-    margin-bottom: 1.8rem;
+    position: absolute;
+    left: 15rem;
+    width: 34.073rem;
+    height: 7.411rem;
+    text-align: left;
+    border-radius: 0.362rem;
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+#product1 {
+    top: 19.215rem;
+}
+
+#product2 {
+    top: 28.434rem;
+    /* 37.201 */
+}
+
+#product3 {
+    /* top: 37.653rem; */
+    top: 46.42rem;
 }
 
 /* radio inputs */
 .radio-btn {
-    width: 1.4rem;
-    height: 1.4rem;
+    position: absolute;
+    top: 2.983rem;
+    left: 2.169rem;
+    width: 1.446rem;
+    height: 1.446rem;
 }
 
 input[type=radio] {
     accent-color: #45a379;
-    transform: scale(1.2);
 }
 
 /* price & qty */
-.product-options .product-qty-price {
-    font-size: 1.4rem;
-    width: 17.1rem;
-    height: 3.8rem;
-    margin-left: 1.8rem;
-    margin-right: 1rem;
+.pairs-count,
+.price {
+    margin: 0;
+    position: absolute;
+    top: 1.988rem;
+    left: 5.423rem;
+    font-size: 1.446rem;
 }
 
-.product-options .product-qty-price .pairs-count {
-    text-transform: capitalize;
-    width: 3.6rem;
-    height: 1.8rem;
-}
-
-.product-options .product-qty-price .price {
-    font-weight: 600;
+.price {
+    top: 3.977rem;
+    font-weight: 500;
     width: 8.2rem;
     height: 1.8rem;
-
 }
 
-.product-options .product-qty-price .old-price {
+
+.product-options .old-price {
     font-size: 1rem;
     color: rgb(184, 178, 178);
-    white-space: nowrap;
     text-decoration: line-through;
     width: 5.5rem;
     height: 1.2rem;
-    position: relative;
-    left: 11.6rem;
-    bottom: 1.8rem;
-
+    position: absolute;
+    left: 17.19rem;
+    top: 4.338rem;
 }
 
 .product-options .discount {
     width: 6.5rem;
-    height: 3.3rem;
+    height: 1.4rem;
     font-weight: 600;
     font-size: 1.4rem;
-    display: flex;
-    align-items:flex-end;
-    flex-direction: column;
-    margin-left: 0.9rem;
+    position: absolute;
+    top: 2.983rem;
+    left: 25.397rem;
 }
 
-.product-options .discount p:first-child {
+.product-options .discount2 {
+    width: 5.5rem;
+    height: 1.5rem;
+    font-weight: 600;
+    font-size: 1.265rem;
+    position: absolute;
+    top: 3.977rem;
+    left: 26.21rem;
+}
+
+.product-options .popular {
     color: #45a379;
-    font-size: 1.3rem;
+    font-size: 1.265rem;
     width: 8.1rem;
     height: 1.5rem;
-    margin-bottom: 0.4rem;
-    white-space: nowrap;
+    position: absolute;
+    top: 2.169rem;
+    left: 23.68rem;
 }
 
 /* when a product is selected */
 #product-selection .product-selected {
     border: 2px solid #3C7E60;
     background-color: #F4FBF9;
-    height: 16.2rem !important;
+    height: 16.178rem !important;
 }
 
-.product-selected .radio-btn .checkmark {
-    border: 2px solid #3C7E60;
-}
 
-/* sizes & colors */
-.product-details {
-    display: flex;
-    flex-direction: column;
-    width: 17.7rem;
-    height: 7.6rem;
-    margin: 0.8rem 0 0 0.9rem;
-}
-
-.product-details .row1 {
-    display: flex;
-    height: 1.2rem;
-    margin-bottom: 0.7rem;
-}
-
-.product-details .row2,
-.product-details .row3 {
-    display: flex;
-    margin-bottom: 0.7rem;
-    height: 2.5rem;
-}
-
-.product-details .row1 .size {
+.product-details .size {
+    position: absolute;
+    top: 6.507rem;
+    left: 5.423rem;
     width: 2rem;
     height: 1.2rem;
-    font-size: 1em;
+    font-size: 1rem;
     margin-right: 5.3rem;
     margin-left: 0.7rem;
     text-align: left;
 }
 
-.product-details .row1 .color {
+.product-details .color {
+    position: absolute;
+    top: 6.507rem;
+    left: 12.744rem;
     width: 3.1rem;
     height: 1.2rem;
     font-size: 1rem;
     text-align: left;
 }
 
-.product-details .index {
+.product-details .sizes {
+    width: 6.598rem;
+    height: 2.531rem;
+    font-size: 1.1rem;
+    outline: none;
+    cursor: pointer;
+}
+
+.product-details .colors {
+    width: 7.23rem;
+    height: 2.531rem;
+    /* margin-left: 0.7rem; */
+    font-size: 1.1rem;
+    outline: none;
+    cursor: pointer;
+}
+
+/* 1st row */
+.product-details .index1 {
     width: 2.3rem;
     height: 1.1rem;
-    margin-bottom: 2.2rem;
+    position: absolute;
+    top: 9.4rem;
+    left: 3.706rem;
 }
 
-.product-details .size-input {
-    width: 6.6rem;
-    height: 2.5rem;
-    font-size: 1.1rem;
-    outline: none;
-    cursor: pointer;
+.product-details .size-input1 {
+    position: absolute;
+    top: 8.405rem;
+    left: 5.423rem;
 }
 
-.product-details .clr-input {
-    width: 7.2rem;
-    height: 2.5rem;
-    margin-left: 0.7rem;
-    font-size: 1.1rem;
-    outline: none;
-    cursor: pointer;
+.product-details .clr-input1 {
+    position: absolute;
+    left: 12.744rem;
+    top: 8.405rem;
 }
+
+/* 2nd row */
+
+.product-details .index2 {
+    width: 2.3rem;
+    height: 1.1rem;
+    position: absolute;
+    top: 12.653rem;
+    left: 3.615rem;
+}
+
+.product-details .size-input2 {
+    position: absolute;
+    top: 11.659rem;
+    left: 5.423rem;
+}
+
+.product-details .clr-input2 {
+    position: absolute;
+    left: 12.744rem;
+    top: 11.659rem;
+}
+
+
 
 /* section 2 - cart details */
-#cart-details .shipping-info {
-    display: flex;
-    align-items: center;
-    font-size: 1.4rem;
-    margin-top: 2.5rem;
-    margin-bottom: 2.4rem;
-    width: 34.1rem;
-}
 
-.shipping-info p:first-child {
-    color: #3C7E60;
-    font-weight: 600;
+.shipping {
+    position: absolute;
+    top: 56.3rem;
+    left: 14.9rem;
+    height: 1.7rem;
     width: 13.4rem;
-    height: 1.7rem;
-    margin-right: 8.2rem;
+    font-size: 1.4rem;
 }
 
-.shipping-info p:last-child {
-    font-weight: 600;
-    width: 12.5rem;
+.total {
+    position: absolute;
+    top: 56.3rem;
+    left: 36.5rem;
     height: 1.7rem;
-    text-align: right;
+    width: 12.5rem;
+    font-size: 1.4rem;
 }
 
 /* button */
 button {
+    position: absolute;
+    top: 60.4rem;
+    left: 14.9rem;
     width: 34.1rem;
     background-color: #3C7E60;
     color: white;
@@ -250,8 +289,6 @@ button {
     border: none;
     border-radius: 0.4rem;
     font-weight: 600;
-    padding: 1.6rem 11.6rem 1.3rem 12.1rem;
-    margin-bottom: 0.8rem;
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
@@ -263,19 +300,17 @@ button:hover {
 
 /***************  footer  ******************/
 footer {
-    margin-bottom: 7.3rem;
-    display: flex;
-    /* float: right; */
+    position: absolute;
+    top: 66rem;
+    left: 38rem;
     font-style: italic;
-    margin-left: 37.7rem;
     font-size: 1.2rem;
-    width: 12rem;
+    width: 11.3rem;
     height: 1.5rem;
+    white-space: nowrap;
 }
 
-footer small {
-    margin-right: 0.5rem;
-}
+
 
 
 /* success message with animations */
@@ -361,41 +396,17 @@ footer small {
 
 @media screen and (max-width:468px) {
     .container {
-        width: 100%;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-
+        width: 37.5rem;
     }
 
-    .line-through {
-        margin: 15.6rem 4rem 1.8rem 4rem;
+   
+    #product-selection .product-options,.shipping ,button,.line-through{
+        left: 1.746rem;
     }
-
-    section {
-        margin-left: 4rem;
-        margin-right: 4rem;
+    .total{
+        left: 23.346rem;
     }
-
-    footer {
-        margin-left: 25rem;
-    }
-}
-
-@media screen and (max-width:378px) {
-
-
-    .line-through {
-        margin: 15.6rem 0rem 1.8rem 0rem;
-    }
-
-    section {
-        margin-left: 0;
-        margin-right: 0;
-    }
-
-    footer {
-        margin-left: 22rem;
-
+    footer{
+        left: 24rem;
     }
 }

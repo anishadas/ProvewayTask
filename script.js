@@ -16,22 +16,33 @@ const discount = document.getElementsByClassName("discount");
 // add to cart button
 const cart_btn = document.getElementById("cart-btn");
 
-// displaying total price
-total.innerHTML = 0.00;
+
 
 // to store data of selected option
 let data = { pair: "", price: "", discount: "" };
 
 // change event for radio inputs
 const handleChangeEvent = () => {
+
+    product_option[2].classList.remove("product-selected");
+    product_details[2].innerHTML = " ";
+    product_option[0].style.top = "19.215rem";
+    product_option[1].style.top = "28.434rem";
+    product_option[2].style.top = "37.653rem";
+
     for (let i = 0; i < radio.length; i++) {
         product_option[i].classList.remove("product-selected");
         product_details[i].innerHTML = " ";
         if (radio[i].checked) {
-            console.log(price[i].childNodes[0])
             product_option[i].classList.add("product-selected");
-            
             product_details[i].innerHTML = addProductDetails();
+            if (i == 0) {
+                product_option[i + 1].style.top = "37.201rem";
+                product_option[i + 2].style.top = "46.42rem";
+            }
+            if (i == 1) {
+                product_option[i + 1].style.top = "46.42rem";
+            }
             total.innerHTML = price[i].childNodes[0].nodeValue;
             let disc = i == 1 ? discount[i].children[1].textContent : discount[i].innerHTML;
             data = { pair: pairs_count[i].innerHTML, price: price[i].childNodes[0].nodeValue, discount: disc};
@@ -48,40 +59,37 @@ radio.forEach(input => {
 const addProductDetails = () => {
     let str = "";
     str += `
-        <div class="row1">
-            <p class="index"></p>
             <p class="size">size</p>
             <p class="color">color</p>
-        </div>
-        <div class="row2">
-            <p class="index">#1</p>
-            <select class="size-input">
+
+            <p class="index1">#1</p>
+            <select class="size-input1 sizes">
                 <option value="s">S</option>
                 <option value="m">M</option>
                 <option value="l">L</option>
             </select>
-            <select class="clr-input">
+            <select class="clr-input1 colors">
                 <option value="red">Red</option>
                 <option value="blue">Blue</option>
                 <option value="Green">Green</option>
             </select>
-        </div>
-        <div class="row3">
-            <p class="index">#2</p>
-            <select class="size-input">
+
+            <p class="index2">#2</p>
+            <select class="size-input2 sizes">
                 <option value="s">S</option>
                 <option value="m">M</option>
                 <option value="l">L</option>
             </select>
-            <select class="clr-input">
+            <select class="clr-input2 colors">
                 <option value="red">Red</option>
                 <option value="blue">Blue</option>
                 <option value="Green">Green</option>
             </select>
-        </div>
     `
     return str;
 }
+
+product_details[1].innerHTML = addProductDetails();
 
 // click event on addTocart button and displaying the data selected
 cart_btn.addEventListener('click', () => {
