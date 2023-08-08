@@ -178,10 +178,8 @@ input[type=radio] {
     left: 5.423rem;
     width: 2rem;
     height: 1.2rem;
-    font-size: 1rem;
-    margin-right: 5.3rem;
-    margin-left: 0.7rem;
-    text-align: left;
+    font-size: 0.994rem;
+    text-transform: capitalize;
 }
 
 .product-details .color {
@@ -190,14 +188,14 @@ input[type=radio] {
     left: 12.744rem;
     width: 3.1rem;
     height: 1.2rem;
-    font-size: 1rem;
-    text-align: left;
+    font-size: 0.994rem;
+    text-transform: capitalize;
 }
 
 .product-details .sizes {
     width: 6.598rem;
     height: 2.531rem;
-    font-size: 1.1rem;
+    font-size: 1.085rem;
     outline: none;
     cursor: pointer;
 }
@@ -205,8 +203,7 @@ input[type=radio] {
 .product-details .colors {
     width: 7.23rem;
     height: 2.531rem;
-    /* margin-left: 0.7rem; */
-    font-size: 1.1rem;
+    font-size: 1.085rem;
     outline: none;
     cursor: pointer;
 }
@@ -218,6 +215,7 @@ input[type=radio] {
     position: absolute;
     top: 9.4rem;
     left: 3.706rem;
+    font-size: 0.904rem;
 }
 
 .product-details .size-input1 {
@@ -240,6 +238,7 @@ input[type=radio] {
     position: absolute;
     top: 12.653rem;
     left: 3.615rem;
+    font-size: 0.904rem;
 }
 
 .product-details .size-input2 {
@@ -265,6 +264,7 @@ input[type=radio] {
     height: 1.7rem;
     width: 13.4rem;
     font-size: 1.4rem;
+    color: #45a379;
 }
 
 .total {
@@ -288,7 +288,7 @@ button {
     height: 4.8rem;
     border: none;
     border-radius: 0.4rem;
-    font-weight: 600;
+    font-weight:600;
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
