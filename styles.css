@@ -396,7 +396,7 @@ footer {
 @media screen and (max-width:645px) {
     .container {
         width: 46.8rem;
-        /* border: 2px solid red; */
+        border: 2px solid red;
     }
 
     #product-selection .product-options,
