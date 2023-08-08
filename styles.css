@@ -134,7 +134,7 @@ input[type=radio] {
     top: 4.338rem;
 }
 
-.product-options .discount {
+.product-options .discount1 {
     width: 6.5rem;
     height: 1.4rem;
     font-weight: 600;
@@ -393,20 +393,47 @@ footer {
 }
 
 /***************  responsive css  ******************/
+@media screen and (max-width:645px) {
+    .container {
+        width: 46.8rem;
+        /* border: 2px solid red; */
+    }
+
+    #product-selection .product-options,
+    .shipping,
+    button,
+    .line-through {
+        left: 6.35rem;
+    }
+
+    .total {
+        left: 27.95rem;
+    }
+
+    footer {
+        left: 28rem;
+    }
+
+}
 
 @media screen and (max-width:468px) {
     .container {
         width: 37.5rem;
     }
 
-   
-    #product-selection .product-options,.shipping ,button,.line-through{
+
+    #product-selection .product-options,
+    .shipping,
+    button,
+    .line-through {
         left: 1.746rem;
     }
-    .total{
+
+    .total {
         left: 23.346rem;
     }
-    footer{
+
+    footer {
         left: 24rem;
     }
 }

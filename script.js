@@ -18,21 +18,21 @@ const cart_btn = document.getElementById("cart-btn");
 
 
 
-// to store data of selected option
-let data = { pair: "", price: "", discount: "" };
+// to store data of selected option : initially 2nd one is selected
+let data = { pair: "3 pair", price: "DKK 360.00", discount: "40% OFF" };
 
 // change event for radio inputs
 const handleChangeEvent = () => {
 
-    product_option[2].classList.remove("product-selected");
-    product_details[2].innerHTML = " ";
     product_option[0].style.top = "19.215rem";
     product_option[1].style.top = "28.434rem";
     product_option[2].style.top = "37.653rem";
 
     for (let i = 0; i < radio.length; i++) {
+        
         product_option[i].classList.remove("product-selected");
         product_details[i].innerHTML = " ";
+
         if (radio[i].checked) {
             product_option[i].classList.add("product-selected");
             product_details[i].innerHTML = addProductDetails();
@@ -44,8 +44,8 @@ const handleChangeEvent = () => {
                 product_option[i + 1].style.top = "46.42rem";
             }
             total.innerHTML = price[i].childNodes[0].nodeValue;
-            let disc = i == 1 ? discount[i].children[1].textContent : discount[i].innerHTML;
-            data = { pair: pairs_count[i].innerHTML, price: price[i].childNodes[0].nodeValue, discount: disc};
+        
+            data = { pair: pairs_count[i].innerHTML, price: price[i].childNodes[0].nodeValue, discount: discount[i].innerHTML};
         }
     }
 }
@@ -93,7 +93,7 @@ product_details[1].innerHTML = addProductDetails();
 
 // click event on addTocart button and displaying the data selected
 cart_btn.addEventListener('click', () => {
-    console.log(data)
+    
     let str = "";
     if (radio[0].checked || radio[1].checked || radio[2].checked) {
         let success_msg = document.getElementById("success-msg");
