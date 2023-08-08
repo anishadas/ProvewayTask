@@ -419,6 +419,7 @@ footer {
 @media screen and (max-width:468px) {
     .container {
         width: 37.5rem;
+        border: 2px solid yellow;
     }
 
 
